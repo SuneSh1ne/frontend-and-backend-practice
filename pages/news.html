@@ -8,8 +8,11 @@
     </head>
     <body>
         <div class="page-container">
-            <div class="header">Мой сайт</div>
-            <div class="nav">
+            <header class="header">
+                <h1>Новости</h1>
+            </header>
+
+            <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
@@ -17,27 +20,50 @@
                     <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <div class="news-container">
-                    <div class="news-card">
-                        <h2 class="news-title">Начало учебного года!!!</h2>
-                        <p class="news-meta">01.09.2025 00:00 А.А. Алхимов</p>
-                        <p class="news-text">УРА! Срочно Идем на пары.</p>
-                    </div>
-                    <div class="news-card">
-                        <h2 class="news-title">КР по Фронту и Бэку</h2>
-                        <p class="news-meta">22.09.2025 12:40 А.А. Алхимов</p>
-                        <p class="news-text">Делаем контрольную.</p>
-                    </div>
-                    <div class="news-card">
-                        <h2 class="news-title">В МИРЭА ничего не произошло...</h2>
-                        <p class="news-meta">28.09.2025 14:00 А.А. Алхимов</p>
-                        <p class="news-text">Тут ничего нет...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">Жуткий подвал</div>    
+            </nav>
+
+            <main class="content">
+                <section class="news-container">
+                    <h2 class="section-title">Последние новости</h2>
+
+                    <article class="news-card">
+                        <header class="news-header">
+                            <h2 class="news-title">Начало учебного года!!!</h2>
+                            <p class="news-meta">01.09.2025 00:00 | А.А. Алхимов</p>
+                        </header>
+                        <div class="news-content">
+                            <p class="news-text">УРА! Срочно Идем на пары.</p>
+                            <a href="#" class="news-link">Читать далее...</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <header class="news-header">
+                            <h2 class="news-title">КР по Фронту и Бэку</h2>
+                            <p class="news-meta">22.09.2025 12:40 А.А. | Алхимов</p>
+                        </header>
+                        <div class="news-content">
+                            <p class="news-text">Делаем контрольную.</p>
+                            <a href="#" class="news-link">Читать далее...</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <header class="news-header">
+                            <h2 class="news-title">В МИРЭА ничего не произошло...</h2>
+                            <p class="news-meta">28.09.2025 14:00 | А.А. Алхимов</p>
+                        </header>
+                        <div class="news-content">
+                            <p class="news-text">Тут ничего нет...</p>
+                            <a href="#" class="news-link">Читать далее...</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <p>© 2025 Новостной портал. Все права защищены.</p>
+            </footer>    
         </div>
     </body>
 </html>

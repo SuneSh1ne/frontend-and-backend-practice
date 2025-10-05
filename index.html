@@ -8,8 +8,11 @@
     </head>
     <body>
         <div class="page-container">
-            <div class="header">Мой сайт</div>
-            <div class="nav">
+            <header class="header">
+                <h1>Мой сайт</h1>
+            </header>
+
+            <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -17,43 +20,53 @@
                     <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <div class="profile-header">
+            </nav>
+
+            <main class="content">
+                <article class="profile-header">
                     <h1 class="profile-title">Информация об авторе</h1>
                     <img class="profile-photo" src="images/photo.png" alt="Фото автора">
                     <h2 class="profile-name">Алхимов Арсений Александрович</h2>
                     <p class="profile-group">ЭФБО-16-24</p>
-                </div>
+                </article>
                 
-                <div class="about-me">
+                <section class="about-me">
+                    <h2>Обо мне</h2>
                     <p>Обо мне: Я учусь в МИРЭА и я счастлив.</p>
-                </div>
+                </section>
                 
-                <div class="skills-container">
-                    <div class="skill-tag">Тайм менеджмент</div>
-                    <div class="skill-tag">Умею писать сайты</div>
-                    <div class="skill-tag">Деньги не проблема</div>
-                    <div class="skill-tag">Имею вес в этой игре</div>
-                </div>
+                <section class="skills-container">
+                    <h2>Мои навыки</h2>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Тайм менеджмент</div>
+                        <div class="skill-tag">Умею писать сайты</div>
+                        <div class="skill-tag">Деньги не проблема</div>
+                        <div class="skill-tag">Имею вес в этой игре</div>
+                    </div>
+                </section>
                 
-                <div class="experience-section">
+                <section class="experience-section">
                     <h2 class="section-title">Мой опыт работы</h2>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Курсовая работа</h3>
-                        <p class="experience-desc">Писал пасьянс на C++ в команде.</p>
+                    <div class="experience-grid">
+                        <article class="experience-card">
+                            <h3 class="experience-title">Курсовая работа</h3>
+                            <p class="experience-desc">Писал пасьянс на C++ в команде.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Этот сайт</h3>
+                            <p class="experience-desc">Написал этот простенький сайт на HTML и CSS.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Безработный</h3>
+                            <p class="experience-desc">Возьите на работу пожалуйста.</p>
+                        </article>
                     </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Этот сайт</h3>
-                        <p class="experience-desc">Написал этот простенький сайт на HTML и CSS.</p>
-                    </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Безработный</h3>
-                        <p class="experience-desc">Возьите на работу пожалуйста.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">Жуткий подвал</div>    
+                </section>
+            </main>
+
+            <footer class="footer">
+                <p>Жуткий подвал</p>
+            </footer>    
         </div>
     </body>
 </html>
