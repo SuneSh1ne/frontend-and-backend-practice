@@ -7,62 +7,69 @@
         <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
-        <div class="page-container">
+        <div class="page">
+
             <header class="header">
-                <h1>Новости</h1>
+                <h1 class="header__title">Новости</h1>
             </header>
 
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="contacts.html">Контакты</a>
+                    </li>
                 </ul>
             </nav>
 
-            <main class="content">
-                <section class="news-container">
-                    <h2 class="section-title">Последние новости</h2>
+            <main class="main">
 
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">Начало учебного года!!!</h2>
-                            <p class="news-meta">01.09.2025 00:00 | А.А. Алхимов</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">УРА! Срочно Идем на пары.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
+                <section class="news">
+                    <h2 class="news__title">Последние новости</h2>
+                    <div class="news__list">
+                        <article class="news-item">
+                            <header class="news-header">
+                                <h2 class="news-item__title">Начало учебного года!!!</h2>
+                                <p class="news-item__date">01.09.2025 00:00</p>
+                            </header>
+                            <div class="news-content">
+                                <p class="news-item__text">УРА! Срочно идем на пары.</p>
+                                <a href="#" class="news-link">Читать далее...</a>
+                            </div>
+                        </article>
 
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">КР по Фронту и Бэку</h2>
-                            <p class="news-meta">22.09.2025 12:40 А.А. | Алхимов</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Делаем контрольную.</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
+                        <article class="news-item">
+                            <header class="news-header">
+                                <h2 class="news-item__title">КР по Фронту и Бэку</h2>
+                                <p class="news-item__date">22.09.2025 12:40</p>
+                            </header>
+                            <div class="news-content">
+                                <p class="news-item__text">Делаем контрольную.</p>
+                                <a href="#" class="news-link">Читать далее...</a>
+                            </div>
+                        </article>
 
-                    <article class="news-card">
-                        <header class="news-header">
-                            <h2 class="news-title">В МИРЭА ничего не произошло...</h2>
-                            <p class="news-meta">28.09.2025 14:00 | А.А. Алхимов</p>
-                        </header>
-                        <div class="news-content">
-                            <p class="news-text">Тут ничего нет...</p>
-                            <a href="#" class="news-link">Читать далее...</a>
-                        </div>
-                    </article>
+                        <article class="news-item">
+                            <header class="news-header">
+                                <h2 class="news-item__title">В МИРЭА ничего не произошло...</h2>
+                                <p class="news-item__date">28.09.2025 14:00</p>
+                            </header>
+                            <div class="news-content">
+                                <p class="news-item__text">Тут ничего нет...</p>
+                                <a href="#" class="news-link">Читать далее...</a>
+                            </div>
+                        </article>
+                    </div>
                 </section>
             </main>
 
             <footer class="footer">
-                <p>© 2025 Новостной портал. Все права защищены.</p>
+                <p class="footer__text">&copy; 2025 Новостной портал. Все права защищены.</p>
             </footer>    
         </div>
     </body>
