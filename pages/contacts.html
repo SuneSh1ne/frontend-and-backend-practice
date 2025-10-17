@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Контакты</title>
         <link rel="stylesheet" href="../style/styles.css">
+        <script src="../main.js" defer></script>
         <style>
             dialog::backdrop {
                 background: rgba(0, 0, 0, 0.6);
@@ -155,6 +156,7 @@
 
             <header class="header">
                 <h1 class="header__title">Контакты</h1>
+                <button id="theme-toggle" class="theme-toggle__button">Тёмная тема</button>
             </header>
 
             <nav class="nav">
@@ -164,6 +166,12 @@
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="practices.html">Практики</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="goods.html">Товары</a>
                     </li>
                     <li class="nav__item nav__item--active">
                         <a class="nav__link" href="contacts.html">Контакты</a>
@@ -200,7 +208,7 @@
                             <p class="contact-item__value">VK, Telegram, WhatsApp</p>
                         </div>
                     </div>
-                    <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
+                    <button class="contacts__button" onclick="contactModal.showModal()">Связаться с нами</button>
                 </section>
             </main>
 

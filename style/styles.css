@@ -166,7 +166,7 @@ body {
 }
 
 .skill:hover {
-    ransform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .skill--html {
@@ -247,8 +247,6 @@ body {
     }
 }
 
-/* Добавляем в конец файла styles.css */
-
 /* Блок news */
 .news {
     background: var(--color-white);
@@ -312,6 +310,22 @@ body {
     gap: var(--space-md);
 }
 
+.contacts__button {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+    transition: background-color 0.3s;
+}
+
+.contacts__button:hover {
+    background: var(--color-accent);
+}
+
 /* Блок contact-item */
 .contact-item {
     padding: var(--space-md);
@@ -329,4 +343,207 @@ body {
 .contact-item__value {
     color: var(--color-accent);
     font-weight: bold;
+}
+
+/* Блок products */
+
+.products__title {
+    color: var(--color-main);
+    margin-bottom: var(--space-md);
+    font-size: 1.5rem;
+}
+
+.products__desc {
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+}
+
+/* Блок product-card */
+.product-card {
+    background: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--color-accent);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--color-accent);
+}
+
+.product-card__title {
+    color: var(--color-main);
+    margin-bottom: var(--space-sm);
+}
+
+.product-card__desc {
+    color: #666;
+}
+
+.product-card__price {
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.product-card__button {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+    transition: background-color 0.3s;
+}
+
+.product-card__button:hover {
+    background: var(--color-accent);
+}
+
+/* Переключатель темной темы */
+.theme-toggle__button {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: var(--space-sm);
+    transition: background-color 0.3s;
+}
+
+.theme-toggle__button:hover {
+    background: var(--color-accent);
+}
+
+/* Тёмная тема */
+
+body.dark-theme {
+    --color-main: #1a1a1a;
+    --color-accent: #e0730d;
+    --color-light: #121212;
+    --color-dark: #171717;
+    --color-text: #ffffff;
+    --color-white: #1c1c1c;
+
+    --shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+body.dark-theme .header {
+    background: var(--color-dark);
+    color: var(--color-text);
+}
+
+body.dark-theme .nav {
+    background: var(--color-main);
+}
+
+body.dark-theme .nav__link {
+    color: var(--color-text);
+}
+
+body.dark-theme .nav__link:hover {
+    background: var(--color-accent);
+    color: var(--color-text);
+}
+
+body.dark-theme .profile__card,
+body.dark-theme .about,
+body.dark-theme .news,
+body.dark-theme .contacts,
+body.dark-theme .project-card,
+body.dark-theme .news-item,
+body.dark-theme .contact-item {
+    background: var(--color-light);
+    color: var(--color-text);
+}
+
+body.dark-theme .profile__name {
+    color: var(--color-text);
+}
+
+body.dark-theme .profile__group {
+    color: var(--color-accent);
+}
+
+body.dark-theme .about__title,
+body.dark-theme .skills__title,
+body.dark-theme .projects__title,
+body.dark-theme .news__title,
+body.dark-theme .contacts__title,
+body.dark-theme .products__title,
+body.dark-theme .project-card__title,
+body.dark-theme .news-item__title,
+body.dark-theme .contact-item__title,
+body.dark-theme .product-card__title {
+    color: var(--color-text);
+}
+
+body.dark-theme .project-card__desc,
+body.dark-theme .news-item__text,
+body.dark-theme .about__text {
+    color: #e0e0e0;
+}
+
+body.dark-theme .news-item__date {
+    color: #add8e6;
+}
+
+body.dark-theme .contact-item__value {
+    color: #add8e6;
+}
+
+body.dark-theme .skill {
+    color: var(--color-text);
+}
+
+body.dark-theme .skill--html {
+    background: #a52a2a;
+}
+
+body.dark-theme .skill--css {
+    background: #1e3a8a;
+}
+
+body.dark-theme .skill--js {
+    background: #a16207;
+    color: var(--color-text);
+}
+
+body.dark-theme .footer {
+    background: var(--color-dark);
+    color: var(--color-text);
+}
+
+body.dark-theme .theme-toggle__button:hover,
+body.dark-theme .product-card__button:hover,
+body.dark-theme .contacts__button:hover {
+    background: var(--color-accent);
+}
+
+body.dark-theme .theme-toggle__button,
+body.dark-theme .product-card__button,
+body.dark-theme .contacts__button {
+    background: var(--color-light);
+    color: var(--color-text);
 }
